@@ -1,0 +1,29 @@
+<h2 id="requirements">Planeta</h2>
+<div class="row">
+    <div class="col-sm-6">
+        <p class="lead">Planeta e sua característica</p>
+        <ul class="lead">
+
+            <li>
+                <b>{{ planeta.name }}</b>
+
+                <ul>
+                    <li>Dia tem: {{ planeta.rotation_period }} hrs</li>
+                    <li>A gravidade é: {{ planeta.gravity }}</li>
+                    <li>Dimension: {{ planeta.diameter }} </li>
+                    <li>O terreno é: {{ planeta.terrain }}</li>
+                    <li>Populaçao: {{ planeta.population }}</li>
+                    <li>Registrado em: {{ planeta.created | date: 'd/M/yyyy' }}</li>
+                </ul>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <div class="col-sm-6">
+        <blockquote class="lead">
+            Aqui esta o planeta mais legal da galáxia!
+        </blockquote>
+    </div>
+</div>
